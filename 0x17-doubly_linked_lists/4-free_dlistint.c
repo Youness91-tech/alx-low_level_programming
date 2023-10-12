@@ -8,7 +8,7 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *freed;
+	dlistint_t *frees_dl;
 
 	while (head != NULL)
 	{
