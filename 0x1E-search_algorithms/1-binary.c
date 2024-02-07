@@ -7,7 +7,7 @@
  *      * @value: the value to search for int the array
  *       *
  *        * Return: first index of the value or -1 if value is not found
- *         */
+ */
 int binary_search(int *array, size_t size, int value)
 {
 	size_t i, left, right;
