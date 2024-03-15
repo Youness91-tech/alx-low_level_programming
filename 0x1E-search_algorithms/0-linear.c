@@ -2,24 +2,24 @@
 /**
  * linear_search - searches for a value in an array of integers
  * using the Linear search algo
- * @array: the pointer to the first element of the array
- * @size: the size of the array (number of elements)
- * @value: the value to search for int the array
+ * @array: The pointer to the first element of the array
+ * @size: The size of the array (number of elements)
+ * @value: value to search for int the array
  *
- * Return: first index of the value or -1 if value is not found
+ * Return: first idx of the value or -1 if value is not found
  */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t i;
+	size_t indx;
 
 	if (!array)
 		return (-1);
 
-	for (i = 0; i < size; i++)
+	for (indx = 0; indx < size; indx++)
 	{
-		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
-		if (array[i] == value)
-			return (i);
+		printf("Value checked array[%ld] = [%d]\n", indx, array[indx]);
+		if (array[indx] == value)
+			return (indx);
 	}
 	return (-1);
 }
